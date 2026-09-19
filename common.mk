@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/default-permissions-oneplus-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-oneplus-camera.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
@@ -419,4 +420,3 @@ PRODUCT_ENFORCE_SELINUX_TREBLE_LABELING := false
 DERPFEST_BUILD_TYPE := Official
 #DERPFEST_VERSION_APPEND_TIME_OF_DAY := true
 #TARGET_DISABLE_EPPE := true
-
